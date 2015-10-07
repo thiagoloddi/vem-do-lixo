@@ -1,0 +1,111 @@
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<form action="/proceedSignUp" method="post">
+  <div>
+    <div class="signup">
+
+      <div class="signup_title_div">
+        <p class="signup_title_text">Sign Up</p>
+      </div>
+
+      <% if(data.err){ %>
+      <div class="signup_inner_div">
+        <div class="signup_tv_div">
+          <% if(data.err == 411){ %>
+          <p style="margin: 0 auto; font-size: 15px; color: red; font-style: oblique;">- Todos os campos são obrigatórios </p>
+          <%}else{%>
+          <p style="margin: 0 auto; font-size: 15px; color: red; font-style: oblique;">- As senhas digitadas devem ser iguais </p>
+          <%}%>
+        </div>
+      </div>
+
+      <%}%>
+
+      <div class="signup_inner_div">
+        <div class="signup_tv_div">
+          <p style="margin: 0 auto;">Nome: </p>
+        </div>
+        <div class="signup_tb_div">
+          <input type="text" style="margin: 0 auto;", name="first_name">
+        </div>
+      </div>
+
+      <div class="signup_inner_div">
+        <div class="signup_tv_div">
+          <p style="margin: 0 auto;">Sobrenome: </p>
+        </div>
+        <div class="signup_tb_div">
+          <input type="text" style="margin: 0 auto;" name="last_name">
+        </div>
+      </div>
+
+      <div class="signup_inner_div">
+        <div class="signup_tv_div">
+          <p style="margin: 0 auto;">Data de Nascimento (dd/mm/aaaa): </p>
+        </div>
+        <div class="signup_tb_div">
+          <input type="text" style="margin: 0 auto;" name="birthdate">
+        </div>
+      </div>
+
+      <div class="signup_inner_div">
+        <div class="signup_tv_div">
+          <p style="margin: 0 auto;">E-mail: </p>
+        </div>
+        <div class="signup_tb_div">
+          <input type="text" style="margin: 0 auto;" name="email">
+        </div>
+      </div>
+
+      <div class="signup_inner_div">
+        <div class="signup_tv_div">
+          <p style="margin: 0 auto;">Nome de Usuário: </p>
+        </div>
+        <div class="signup_tb_div">
+          <input type="text" style="margin: 0 auto;" name="username">
+        </div>
+      </div>
+
+      <div class="signup_inner_div">
+        <div class="signup_tv_div">
+          <p style="margin: 0 auto;">Senha: </p>
+        </div>
+        <div class="signup_tb_div">
+          <input type="text" style="margin: 0 auto;" name="password1">
+        </div>
+      </div>
+
+      <div class="signup_inner_div">
+        <div class="signup_tv_div">
+          <p style="margin: 0 auto;">Repita a senha: </p>
+        </div>
+        <div class="signup_tb_div">
+          <input type="text" style="margin: 0 auto;" name="password2">
+        </div>
+      </div>
+
+      <div class="signup_inner_div">
+        <div class="signup_tv_div">
+          <input type="checkbox" style="float: left;" name="isBuyer">
+          <p style="float: left; margin: 0 auto;">Quero Comprar</p>
+        </div>
+        <div class="signup_tb_div">
+          <input type="checkbox" style="float: left;" name="isVendor">
+          <p style="float: left; margin: 0 auto;">Quero Vender</p>
+        </div>
+      </div>
+
+      <div class="signup_inner_div">
+        <div class="signup_tv_div">
+          <input type="submit" style="float: left;" value="cancel" name="operation">
+
+        </div>
+        <div class="signup_tb_div">
+          <input type="submit" style="float: right;" value="continue" name="operation">
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</form>

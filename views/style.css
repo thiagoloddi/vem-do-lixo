@@ -1,0 +1,74 @@
+/** {*/
+    /*border: dashed 1px black;*/
+/*}*/
+
+.headers {
+    height: 60px;
+    width: 1200px;
+    border: solid 1px black;
+}
+
+.textbox {
+    height: 25px;
+    width: 85px;
+    float: left;
+
+}
+
+.form {
+    height: 60px;
+    float: right;
+    text-align: center;
+}
+
+.button {
+    height: 25px;
+    width: 100px;
+    float: left;
+}
+
+.signup{
+    margin: 0 auto;
+    width: 600px;
+    height: 1000px;
+}
+
+.signup_title_div {
+    height: 40px;
+    margin-top: 20px;
+    width: 600px;
+}
+
+.signup_title_text {
+    font-size: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.signup_inner_div {
+    height: 40px;
+    width: 600px;
+    margin-left: 5px;
+}
+
+.signup_tv_div {
+    height: 40px;
+    width: 290px;
+    float: left;
+}
+
+.signup_tb_div {
+    height: 40px;
+    width: 290px;
+    float: left;
+}
+
+.signup_p {
+    text-align: left;
+    width: 200px;
+
+}
+
+.signup_tb {
+    width: 200px;
+}
